@@ -1,0 +1,30 @@
+{
+  "name": "npm-local-modules-using-git-submodules",
+  "version": "0.0.5",
+  "description": "Module to showcase npm modules with local modules kept in git submodules",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npm --prefix modules/frontend-communicator install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jewetnitg/npm-local-modules-using-git-submodules.git"
+  },
+  "keywords": [
+    "example",
+    "bug"
+  ],
+  "author": "Rik Hoffbauer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jewetnitg/npm-local-modules-using-git-submodules/issues"
+  },
+  "homepage": "https://github.com/jewetnitg/npm-local-modules-using-git-submodules#readme",
+  "dependencies": {
+    "frontend-communicator": "file:modules/frontend-communicator"
+  },
+  "bundledDependencies": [
+    "frontend-communicator"
+  ]
+}
